@@ -20,7 +20,7 @@ public class Main {
                 caracterPorCatarter(path);
                 bufferReader(path);
             }else System.out.println("extension not supported");
-        }else System.out.println("Extension not found");
+        }else System.out.println("File not found");
 
     }
     public static void caracterPorCatarter(String archivoTxt){
@@ -64,7 +64,7 @@ public class Main {
                 System.out.println("***IMPRIMIENDO ARCHIVO " + archivoTxt + "***");
                 while ((cad = bf.readLine()) != null) {
                     //System.out.printf(cad + "\n");
-                    lista.add(cad);
+                    lista.add(cad.toLowerCase());
                 }
             } else System.out.print("Es un directorio");
         }else System.out.println("El fichero no existe");
